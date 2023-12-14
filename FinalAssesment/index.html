@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB222:Final Assessment - Shannon Lawrence</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    
+    <main>
+        <section class = "shannon">
+            <img src = "IMG_2284.jpeg" class = "photo" alt = "Shannon Lawrence Photo">
+            <h2>Shannon Lawrence</h2>
+            <h4>Web Developer</h4>
+            <div class="button">
+                <a class="myresume btnResume" href="ShannonResume2023Official.pdf">
+                    <i class="fa fa-download"></i>Resume
+                </a>
+                <a class="contact btnContact" href="#contactMe">
+                    <i class="fa fa-download"></i>Contact Me
+                </a>
+            </div>
+        </section>
+         
+      
+        <section id = "infographic">
+            <h3 class = "title">About Me and Academic Honesty</h3>
+            <div class = "aboutMe">
+                <div class = "columnLeft">
+                    <div class = "academicInt"></div>
+                    <p>I declare that my assessment is wholly my own work in accordance with
+                        Seneca Academic Policy. No part of this assessment has been copied
+                        manually or electronically from any other source (including web sites)
+                        except for the information supplied by the WEB222 instructors and / or
+                        made available in this assessment for my use. I also declare that no part
+                        of this assignment has been distributed to other students.</p>
+                        <p><b>Date: </b>December 13 2023</p>
+                        
+                </div>
+                <div class = "columnRight">
+                    <h3 class = "basicInfo"><b>Basic Information</b></h3>
+                    <table class = "tableInfo">
+                        <tr>
+                            <th>AGE:</th>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <th>EMAIL:</th>
+                            <td>slawrence19@myseneca.ca</td>
+                        </tr>
+                        <tr>
+                            <th>LANGUAGE:</th>
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <th>CLASS SECTION:</th>
+                            <td>NFF</td>
+                        </tr>
+                        <tr>
+                            <th>STUDENT ID:</th>
+                            <td>130580160</td>
+                        </tr>
+                        <tr>
+                            <th>INSTRUCTOR:</th>
+                            <td>MARK MERRITT</td>
+                        </tr>  
+                    </table>
+                   
+                </div>
+            </div>
+        </section>
+        
+
+         
+         <section id = "education">
+            <h3 class = "title">EDUCATION</h3>
+            <div class = "educationInfo">
+                <div class = "columnLeft">
+                    <div class = "year">2023 - 2024 (expected)</div>
+                    <p>Ontario Diploma</p>
+                </div>
+                <div class = "columnRight">
+                    <div class = "program"><b>Computer Programming</b></div>
+                    <div class = "school">Seneca College</div>
+                    <p class = "description">Gaining proficiency in HTML, CSS, Javascript, C and C++</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            
+            <form id = "contactMe" action = "https://httpbin.org/post" method = "post">
+                <h2><b>Contact Me</b></h2>
+                <label for = "contactName">Name:</label>
+                <input 
+                id = "contactName" type = "text" name = "contactName" tabindex = "0" required>
+
+                <label for = "contactEmail">Email:</label>
+                <input 
+                id = "contactEmail" type = "email" name = "contactEmail" tabindex = "1" required>
+
+                <label for = "contactAddress">Address:</label>
+                <input 
+                id = "contactAddress" type = "text" name = "contactAddress" tabindex = "2" required>
+
+                <label for = "contactCity">City:</label>
+                <input 
+                id = "contactCity" list = "cities" name = "contactCity" tabindex = "3" required>
+                <datalist id = "cities">
+                    <option value = "Toronto"></option>
+                    <option value = "Brampton"></option>
+                    <option value = "Etobicoke"></option>
+                    <option value = "Montreal"></option>
+                    <option value = "Ottawa"></option>
+                    <option value = "Barrie"></option>
+                    <option value = "Calgary"></option>
+                    <option value = "Edmonton"></option>
+                    <option value = "Vancouver"></option>
+                    <option value = "Winnipeg"></option>
+                    <option value = "Kelowna"></option>
+                    <option value = "Oshawa"></option>
+                </datalist>
+
+                <label for = "contactPostal">Postal Code:</label>
+                <input 
+                id = "contactPostal" type = "text" name = "contactPostal" tabindex = "3" required>
+
+                <div class="message">
+                   <!----<label for="contactHelp"><strong>How Can I Help You?</strong></label>-->
+                   <h5>How Can I Help You?</h5>
+                    <label><input type="radio" id = "question" name="contactQuestion" value="Question" tabindex="4" required>Question</label>
+                    <label><input type="radio" id = "comment" name="contactComment" value="Comment" tabindex="5" required>Comment</label>
+                    <label><input type="radio" id = "hiring" name="contactHiring" value="Hiring" tabindex="6" required>Hiring</label>
+                    
+                    <div class="hourlyRate">
+                        <label for="hourlyRate">Hourly Rate:</label>
+                        <input id="hourlyRate" type="number" name="hourlyRate" min="15" placeholder="Input hourly rate" hidden>
+                    </div>
+                    
+                    <label for="boxMessage"></label>
+                    <textarea id="boxMessage" name="boxMessage" rows="5" cols="25" placeholder="Leave me a message!"></textarea>
+
+                    <div class = "submitBtn">
+                        <button type = "submit" name = "submitBtn" disabled>Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    
+        
+    </main>
+   <script src = "script.js"></script>
+    
+</body>
+</html>
